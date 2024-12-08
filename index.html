@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal de Felipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="corpo">
+    <header class="topo">
+        <h1>Portfólio de: Valdenilson Felipe Souza Silva</h1>
+    </header>
+    
+    <nav id="navegação">
+        <a href navegue="sobreMim.html" >Sobre mim  </a> |
+        <a href navegue="formacaoEducacional.html">Formação</a>  |
+        <a href navegue="portfólio.html" >Portfólio  </a> |
+        <a href navegue="contato.html">Entre em Contato</a> 
+
+    </nav>
+    <section id = "conteudo"></section> <!--Sessão onde eu colocarei os conteudos de cada link-->
+
+    <script>
+    //aqui eu escrevi um codigo javaScript que eu aprendi num curso que eu já fiz, onde ele coloca o conteudo do meu arquivo
+    //em uma sessão na propria pagina, envez de ter que ficar passando pra varias paginas diferentes    
+        document.querySelectorAll('[navegue]').forEach(link => {//o "navegue" que eu coloquei lá encima
+            const conteudo = document.getElementById('conteudo')
+            link.onclick = function(e){
+                e.preventDefault()//a função .preventDefault que evita a saida da pag principal
+
+                fetch(link.getAttribute('navegue'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+
+
+</body>
+</html>

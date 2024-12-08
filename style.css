@@ -1,0 +1,144 @@
+/*Esse documento Css tem todos os estilos que eu apliquei no site, fiz comentarios em alguns que servem pra grande parte das classes
+e id's que tem durante todo o arquivo*/
+.corpo{
+    background-color:#181818;
+}
+
+.topo{
+    text-align: center;
+    color:white;
+    font-family: monospace;
+    
+}
+
+#navegação{
+    text-align: center;
+   font-size: large;
+   padding: 50px 550;
+   text-decoration: none;
+   color: white;
+}
+
+#conteudo{
+    color:white;
+
+}
+
+#navegação + #conteudo {
+    border-top: 1px solid #ccc; /* Linha cinza e fina acima do conteúdo */
+    margin-top: 10px;
+}
+
+
+#navegação a:visited{
+    color: white;
+    text-decoration: none;
+}
+#navegação a:hover {
+    color: blue; /* Cor ao passar o mouse */
+}
+
+
+
+.jogofavorito{
+    width: 250px;
+    height: auto;
+    border: 5px solid #000; /* Bordas de 5px, cor preta */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    padding: 10px; /* Espaçamento interno entre a imagem e a borda */
+    
+}
+
+.euMesmo{
+    font-size: x-large;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.titulo{
+    font-size: xx-large;
+    margin-left: 110px;
+}
+
+.objetos{
+    font-size: large;
+    margin-left: 150px;
+    
+}
+
+/*Abaixo estão as cores na parte de formação onde eu falo as linguagens que eu sei*/
+.coresling:nth-child(1){
+    color:yellow;
+}
+
+.coresling:nth-child(2){
+    color: orange;
+}
+
+
+.cssEUnin{
+    color:aqua;
+}
+
+.coresling:nth-child(4){
+    color: yellowgreen;
+}
+
+.coresling:nth-child(5){
+    color: rgb(228, 11, 228);
+}
+
+.coresling:nth-child(6){
+    color: blue;
+}
+
+.coresling:nth-child(7){
+    color: purple;
+}
+
+
+#areaTexto {
+    background-color: black; 
+    color: white; /* Texto branco para contraste */
+    font-size: 16px; /* Aumenta o tamanho da fonte para o texto */
+    padding: 10px; /* Adiciona espaço interno ao redor do texto */
+    border: 2px solid white; /* Borda branca */
+    border-radius: 8px; /* Borda arredondada */
+    width: 50%; /*aqui a largura que a caixa de texto vai ocupar*/
+    height: 150px;
+    box-sizing: border-box;
+    resize: none; /*Aqui pra impedir que o usuario mude o tamanho da caixa de texto*/
+}
+
+.caixa{
+    background-color: #000;
+    color: white;
+    width: 30%;
+    border: 2px solid white;
+    height: 20px;
+    text-align: center;
+}
+
+.botao{
+    background-color: gray;
+    color: white;
+    width: 150px;
+    height: 50px; /* Altura do botão */
+    font-size: 18px;
+}
+
+#LinksProj{
+    font-size: larger;
+    color: white;
+}
+
+
+.centro{
+    text-align: center;
+}
+
+.infoEu{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
